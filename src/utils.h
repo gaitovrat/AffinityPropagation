@@ -2,11 +2,21 @@
 #define __UTILS_H__
 
 #include <cstdint>
-#include <vector>
+#include <optional>
+#include <string>
+
+#include "types.h"
 
 namespace utils {
+std::optional<Matrix> readCSV(const std::string &filename);
 
-uint64_t sum(const std::vector<uint32_t> &vec);
+/**
+ * @brief read csv into a matrix
+ *
+ * @param filename filename
+ * @return std::optional<Matrix> matrix
+ */
+std::optional<Matrix> readCSV(const std::string &filename, uint64_t maxSize);
 } // namespace utils
 
 #endif // __UTILS_H__

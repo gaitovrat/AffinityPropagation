@@ -20,7 +20,7 @@ enable_testing()
 
 add_executable(
   ${PROJECT_NAME}_test
-  "test_utils.cpp"
+  ${SOURCES}
 )
 target_link_libraries(
   ${PROJECT_NAME}_test
