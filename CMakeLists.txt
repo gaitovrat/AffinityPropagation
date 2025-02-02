@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(srflp)
+project(AffinityPropagation)
 
 if (NOT CMAKE_CXX_COMPILER MATCHES "clang")
 	message(FATAL_ERROR "Please use Clang as the compiler (e.g., set CMAKE_CXX_COMPILER to clang++)")
